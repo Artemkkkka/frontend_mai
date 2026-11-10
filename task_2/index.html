@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Конструктор дашборда</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="toolbar">
+    <h1>Дашборд</h1>
+    <div class="toolbar-buttons">
+      <button id="add-button" type="button">Добавить виджет</button>
+      <button id="reset-button" type="button">Сбросить дашборд</button>
+      <button id="theme-button" type="button" aria-pressed="false">Тёмная тема</button>
+      <span>Виджетов: <strong id="count">0</strong></span>
+    </div>
+  </header>
+
+  <main>
+    <section id="empty" class="empty" hidden>
+      <h2>Дашборд пуст</h2>
+      <p>Добавьте свой первый виджет</p>
+      <button id="empty-add-button" type="button">Добавить виджет</button>
+    </section>
+    <section id="grid" class="grid" aria-label="Виджеты"></section>
+  </main>
+
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
